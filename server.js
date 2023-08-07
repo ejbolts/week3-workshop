@@ -8,7 +8,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Import routes
-require("./rotues/check")(app, path);
+
+require("./routes/check")(app, path);
 
 app.listen(port, () =>
   console.log(`App listening at http://localhost:${port}`)

@@ -2,32 +2,65 @@
 <html>
   <head>
     <title>Login</title>
-    <link
-      rel="stylesheet"
-      href="./style.css"
-    />
+    <style>
+      .hidemessage {
+        display: none;
+        background-color: #f8d7da;
+        color: #721c24;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <h1>Login Page</h1>
+    <h2>task3 form</h2>
     <form
       action="/login"
       method="POST"
     >
-      <label for="email">Email:</label>
+      <label for="email_task3">Email:</label>
       <input
         type="email"
-        id="email"
+        id="email_task3"
         name="email"
         required
       />
-      <label for="password">Password:</label>
+      <label for="password_task3">Password:</label>
       <input
         type="password"
-        id="password"
+        id="password_task3"
         name="password"
         required
       />
       <button type="submit">Login</button>
     </form>
+    <h2>task4 form Jquery</h2>
+
+    <form id="loginForm">
+      <label for="email_task4">Email:</label>
+      <input
+        type="email"
+        id="email_task4"
+        name="email"
+        required
+      />
+      <label for="password_task4">Password:</label>
+      <input
+        type="password"
+        id="password_task4"
+        name="password"
+        required
+      />
+      <button type="submit">Login</button>
+    </form>
+    <div
+      id="errormsg"
+      class="hidemessage"
+    >
+      <h1>User credentials do not match</h1>
+    </div>
   </body>
 </html>

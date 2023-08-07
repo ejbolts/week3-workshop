@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 module.exports = (app, path) => {
   // static route for serving the HTML/CSS/JS files
-  app.use("/", express.static(path.join(__dirname, "./www")));
+  app.use("/", express.static(path.join(__dirname, "../www")));
 
   // Home route: Serving the login form
   app.get("/", (req, res) => {
@@ -12,7 +12,7 @@ module.exports = (app, path) => {
 
   // Account route: Serving the account info page
   app.get("/account", (req, res) => {
-    let filepath = path.resolve("../www/account.html");
+    let filepath = path.resolve("./www/account.html");
     res.sendFile(filepath);
   });
 

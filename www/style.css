@@ -1,0 +1,8 @@
+#errormsg {
+  display: none;
+  /* other styles as needed */
+}
+
+#errormsg.showmessage {
+  display: block;
+}
